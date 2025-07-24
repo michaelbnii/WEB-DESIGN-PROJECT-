@@ -1,0 +1,26 @@
+
+import React, { Component } from "react";
+// If you need to import Home, do it here like:
+import Home from './Home';
+<p>&copy;  Your websight name.
+
+</p>
+export class Profile extends Component {
+    render() {
+        return (
+            <div>
+                <p>myname={this.props.name}</p>
+                <p>myage={this.props.age}</p>     
+                <p>myjob={this.props.jobTitle}</p>
+                <p>myemail={this.props.email}</p>                     
+                <h1>Profile</h1>
+                <p>Name: {this.props.name}</p>
+                <p>Age: {this.props.age}</p>
+                <p>Job Title: {this.props.jobTitle}</p> 
+                <p>Email: {this.props.email}</p>    
+                {/* this is a profile component */}
+                <Home />
+            </div>
+        );
+    }
+}
